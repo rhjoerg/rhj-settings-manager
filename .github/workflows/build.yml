@@ -3,6 +3,9 @@ name: Build
 
 on: [push]
 
+env:
+  GITHUB_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
+
 jobs:
 
   build:
@@ -29,5 +32,3 @@ jobs:
           
     - name: Build
       run: mvn clean deploy --settings settings.xml
-      env:
-        GITHUB_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
