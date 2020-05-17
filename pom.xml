@@ -5,44 +5,20 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	
-	<groupId>ch.rhj</groupId>
+	<parent>
+		<groupId>ch.rhj</groupId>
+		<artifactId>rhj-java-parent</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	
 	<artifactId>rhj-settings-manager</artifactId>
-	<version>0.0.1</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	
 	<name>RHJ Settings Manager</name>
 	<description>RHJ Settings Manager</description>
 	<url>https://github.com/rhjoerg/${project.artifactId}</url>
-	<inceptionYear>2020</inceptionYear>
 
-	<issueManagement>
-		<url>https://github.com/rhjoerg/${project.artifactId}/issues</url>
-		<system>GitHub Issues</system>
-	</issueManagement>
-	
-	<licenses>
-		<license>
-			<name>MIT License</name>
-			<url>https://github.com/rhjoerg/${project.artifactId}/blob/master/LICENSE</url>
-			<distribution>repo</distribution>
-		</license>
-	</licenses>
-	
-	<scm>
-		<url>https://github.com/rhjoerg/${project.artifactId}</url>
-		<connection>scm:git:git://github.com/rhjoerg/${project.artifactId}.git</connection>
-		<developerConnection>scm:git:git@github.com:rhjoerg/${project.artifactId}.git</developerConnection>
-	</scm>
-	
-	<developers>
-		<developer>
-			<id>rhjoerg</id>
-			<name>Roger H. Jörg</name>
-			<email>rhjoerg@gmail.com</email>
-			<url>https://rhjoerg.github.io</url>
-		</developer>
-	</developers>
-	
 	<properties>
 	
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -53,19 +29,5 @@
 		<java.version>11</java.version>
 
 	</properties>
-	
-	<distributionManagement>
-	
-		<snapshotRepository>
-			<id>github</id>
-			<url>https://maven.pkg.github.com/rhjoerg/maven</url>
-		</snapshotRepository>
-		
-		<repository>
-			<id>github</id>
-			<url>https://maven.pkg.github.com/rhjoerg/maven</url>
-		</repository>
-		
-	</distributionManagement>
-	
+
 </project>
